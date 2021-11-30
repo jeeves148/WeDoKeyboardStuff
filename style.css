@@ -1,0 +1,25 @@
+:root{
+    /*Colors for site */
+    --main-text-color:black;
+    
+    /*fonts*/
+    --title-font: 'Balsamiq Sans', cursive;
+    --main-text-font: 'Outfit', sans-serif;
+
+    /*font size*/
+    --title-font-size:4vw;
+    --main-text-font-size:1vw;
+
+}
+
+h1 
+{
+    font-family: var(--title-font);
+    font-size: var(--title-font-size);
+}
+
+body
+{
+    font-family: var(--main-text-font);
+    font-size:var(--main-text-font);
+}
