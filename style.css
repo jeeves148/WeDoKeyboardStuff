@@ -1,10 +1,25 @@
 :root{
+
+    /*Color pallette*/
+    /* CSS HEX */
+    --prussian-blue: #003049ff;
+    --maximum-red: #d62828ff;
+    --orange: #f77f00ff;
+    --maximum-yellow-red: #fcbf49ff;
+    --medium-turquoise: #4ecdc4ff;
+    
     /*Colors for site */
-    --main-text-color:black;
+
+    --main-text-color:var(--prussian-blue);
+    --main-color-background:var(--maximum-red);
+    --other-color:var(--orange);
+    --highlight:var(--maximum-yellow-red);
+
     
     /*fonts*/
-    --title-font: 'Balsamiq Sans', cursive;
-    --main-text-font: 'Outfit', sans-serif;
+    --title-font: "IBM Plex Mono", monospace;
+    --main-text-font: 'IBM Plex Sans', sans-serif;
+
 
     /*font size*/
     --title-font-size:4vw;
@@ -12,14 +27,67 @@
 
 }
 
+#title
+{
+    text-shadow: 3px 3px var(--highlight);
+    margin: auto;
+    width: 50%;
+    text-align: left;
+}
+
+#banner
+{
+    padding-top: auto;
+    padding-bottom: auto;
+    width:100%;
+    height:20%;
+}
+
 h1 
 {
     font-family: var(--title-font);
     font-size: var(--title-font-size);
+
 }
 
 body
 {
     font-family: var(--main-text-font);
     font-size:var(--main-text-font);
+}
+
+.more-right-container
+{
+    display:flex;
+    height:20%;
+
+}
+
+.big-right
+{
+    padding:2%;
+    width:70%;
+    float:right;
+    background-color: var(--other-color);
+
+}
+
+.small-left
+{
+    padding: 2%;
+    width:30%;
+    float:left;
+    background-color:none;
+}
+
+/*Images and stuff*/
+.fill
+{
+    width:100%;
+
+}
+
+.title_icon
+{
+    height:100%;
 }
