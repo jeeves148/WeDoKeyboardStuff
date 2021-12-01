@@ -14,6 +14,8 @@
     --main-color-background:var(--maximum-red);
     --other-color:var(--orange);
     --highlight:var(--maximum-yellow-red);
+    --topnavs-and-other-small-thing:var(--medium-turquoise);
+
 
     
     /*fonts*/
@@ -26,6 +28,39 @@
     --main-text-font-size:1vw;
 
 }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:transparent;
+    overflow: hidden;
+    position:sticky;
+    top:0;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: var(--main-text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: var(--title-font);
+    
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: var(--other-color);
+    color:var(--main-text-font);
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: var(--topnavs-and-other-small-thing);
+    color: var(--main-text-color);
+    text-shadow: 1px 1px var(--highlight);
+  }
 
 #title
 {
@@ -54,6 +89,7 @@ body
 {
     font-family: var(--main-text-font);
     font-size:var(--main-text-font);
+    color:var(--main-text-color);
 }
 
 .more-right-container
