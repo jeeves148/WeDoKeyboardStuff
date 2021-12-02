@@ -127,3 +127,14 @@ body
 {
     height:100%;
 }
+
+footer{
+    display: block;
+    color: var(--maximum-red);
+    float:left;
+    padding:0.5%;
+    font-family:var(--title-font);
+    /*this is just pi because I was bored*/
+    font-size: 1.5em;
+    width:100%;
+}

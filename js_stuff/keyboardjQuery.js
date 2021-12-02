@@ -2,7 +2,7 @@ $("document").ready(function()
 {
     $("h1").click(function()
     {
-        $("#title").append("<h1>Hello World</h1>");
+        $("h1").append("<h1>Hello World</h1>");
     })
 
 
